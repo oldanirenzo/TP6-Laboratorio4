@@ -4,11 +4,12 @@
       <b-card no-body class="overflow-hidden" border-variant="dark" style="max-width: 1920px;">
         <b-row no-gutters>
           <b-col md="2">
+            <a :href="'/detalle/' + instrumentoParam.id">
             <b-card-img
               :src="'/images/'+instrumentoParam.imagen"
               :alt="instrumentoParam.descripcion"
               class="rounded-0"
-            ></b-card-img>
+            ></b-card-img> </a>
           </b-col>
           <b-col md="7">
             <b-card-body :title="instrumentoParam.instrumento">
